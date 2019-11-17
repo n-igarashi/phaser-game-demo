@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+// ---------------------------------------------------------------------------
+// Images Path
+// ---------------------------------------------------------------------------
+$imgPath: '/_assets/images/';
+
+// ---------------------------------------------------------------------------
+// Media Queries (変数のみを使用する場合)
+// ---------------------------------------------------------------------------
+$mq_min_769: '(min-width: 769px)';
+$mq_max_768: '(max-width: 768px)';
+$mq_max_480: '(max-width: 480px)';
+$mq_max_375: '(max-width: 375px)';
+$mq_max_320: '(max-width: 320px)';
+
+// ---------------------------------------------------------------------------
+// Media Queries (ミックスインを使用する場合)
+// ---------------------------------------------------------------------------
+$mq-breakpoints: (
+  'xlarge': 74.9375em, // 1199px
+  'large' : 64em,      // 1024px
+  'medium': 48em,      // 768px
+  'small' : 33.9375em, // 543px
+  'xsmall': 20em       // 320px
+);
+
+// ---------------------------------
+// Other Breakpoints
+// ---------------------------------
+//      75em == 1200px
+// 64.0625em == 1025px
+// 48.0625em == 769px
+//      34em == 544px
+// 20.0625em == 321px
+//
+// ---------------------------------
+//   Media Queries Examples
+// ---------------------------------
+// .selector {
+//   property: value;
+//
+//   /* @media (min-width: 75em) */
+//   @include mq(xlarge, min, true) {
+//     property: value;
+//   }
+//
+//   /* @media (max-width: 48em) */
+//   @include mq() {
+//     property: value;
+//   }
+//
+//   /* @media (max-width: 33.9375em) */
+//   @include mq(small) {
+//     property: value;
+//   }
+//
+//   /* @media (max-width: 74.9375em) and (min-width: 64.0625em) */
+//   @include mq(xlarge) {
+//     @include mq(large, min, true) {
+//       property: value;
+//     }
+//   }
+// }
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// Easing
+// ---------------------------------------------------------------------------
+$easeInSine:    cubic-bezier(.47, 0, .745, .715);
+$easeOutSine:   cubic-bezier(.39, .575, .565, 1);
+$easeInOutSine: cubic-bezier(.39, .575, .565, 1);
+
+$easeInQuad:    cubic-bezier(.55, .085, .68, .53);
+$easeOutQuad:   cubic-bezier(.25, .46, .45, .94);
+$easeInOutQuad: cubic-bezier(.25, .46, .45, .94);
+
+$easeInCubic:    cubic-bezier(.55, .055, .675, .19);
+$easeOutCubic:   cubic-bezier(.215, .61, .355, 1);
+$easeInOutCubic: cubic-bezier(.215, .61, .355, 1);
+
+$easeInQuart:    cubic-bezier(.895, .03, .685, .22);
+$easeOutQuart:   cubic-bezier(.165, .84, .44, 1);
+$easeInOutQuart: cubic-bezier(.165, .84, .44, 1);
+
+$easeInQuint:    cubic-bezier(.755, .05, .855, .06);
+$easeOutQuint:   cubic-bezier(.23, 1, .32, 1);
+$easeInOutQuint: cubic-bezier(.23, 1, .32, 1);
+
+$easeInExpo:    cubic-bezier(.95, .05, .795, .035);
+$easeOutExpo:   cubic-bezier(.19, 1, .22, 1);
+$easeInOutExpo: cubic-bezier(.19, 1, .22, 1);
+
+$easeInCirc:    cubic-bezier(.6, .04, .98, .335);
+$easeOutCirc:   cubic-bezier(.075, .82, .165, 1);
+$easeInOutCirc: cubic-bezier(.075, .82, .165, 1);
+
+$easeInBack:    cubic-bezier(.6, -.28, .735, .045);
+$easeOutBack:   cubic-bezier(.175, .885, .32, 1.275);
+$easeInOutBack: cubic-bezier(.68, -.55, .265, 1.55);
+
+$easeInOutFast: cubic-bezier(1, 0, 0, 1);
+
+$authenticMotion: cubic-bezier(.4, 0, .2, 1);
+
+// ---------------------------------------------------------------------------
+// Contents Width
+// ---------------------------------------------------------------------------
+$contentsW: 1200px;
+
+// ---------------------------------------------------------------------------
+// Colors
+// ---------------------------------------------------------------------------
+$baseColor: #333;
+$bgColor: #fff;
+$accentColor: #f00;
+$linkColor: #d8d8d8;
+
+// ---------------------------------------------------------------------------
+// Service Brand Color
+// ---------------------------------------------------------------------------
+$facebookColor: #3b5998;
+$twitterColor: #55acee;
+$googleplusColor: #dd4b39;
+$instaColor: #d93177;
+$tumblrColor: #36465d;
+$flickrColor01: #0063dc;
+$flickrColor02: #ff0084;
+$hatenaColor: #008fde;
+$lineColor: #00c300;
+$youtubeColor: #cd201f;
+$vimeoColor: #1ab7ea;
+$dropboxColor: #007ee5;
+$snapchatColor: #fffc00;
+$pinterestColor: #bd081c;
+$noteColor: #2dcdb5;
+$wordpressColor: #21759b;
+
+// ---------------------------------------------------------------------------
+// Font Family
+// ---------------------------------------------------------------------------
+$baseFont: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+// ▼ 游ゴシック体 を使用するとき ▼
+// @font-face {
+//   font-family: 'Yu Gothic';
+//   src: local('Yu Gothic Medium');
+//   font-weight: 100;
+// }
+// @font-face {
+//   font-family: 'Yu Gothic';
+//   src: local('Yu Gothic Medium');
+//   font-weight: 200;
+// }
+// @font-face {
+//   font-family: 'Yu Gothic';
+//   src: local('Yu Gothic Medium');
+//   font-weight: 300;
+// }
+// @font-face {
+//   font-family: 'Yu Gothic';
+//   src: local('Yu Gothic Medium');
+//   font-weight: 400;
+// }
+// @font-face {
+//   font-family: 'Yu Gothic';
+//   src: local('Yu Gothic Bold');
+//   font-weight: bold;
+// }
+// $baseFont: 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;

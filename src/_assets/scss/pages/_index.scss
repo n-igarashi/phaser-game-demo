@@ -1,0 +1,75 @@
+@charset "utf-8";
+*{
+  user-select: none;
+  touch-callout: none;
+}
+html,body{
+  height: 100%;
+}
+.appWrap{
+
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  .buttonL{
+    position: relative;
+    width: 200px;
+    height: 100%;
+  }
+  .buttonR{
+    position: relative;
+    width: 200px;
+    height: 100%;
+  }
+  .button{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+  }
+  .buttonWrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-outline: 0 0 #000
+  }
+
+  #up{
+    margin-bottom: 50px;
+  }
+  #right{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+  }
+  #left{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+  }
+  #buttonA{
+    margin-bottom: 50px;
+  }
+
+  #apps{
+    height: 100%;
+    canvas{
+      position: relative;
+      top: 50%;
+      width: 100%!important;
+      max-height: 100%;
+      transform: translateY(-50%);
+    }
+  }
+}

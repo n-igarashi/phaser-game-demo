@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// ---------------------------------------------------------------------------
+// Media Queries
+// ---------------------------------------------------------------------------
+@mixin mq($breakpoint: medium, $rule: max, $addition: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if $rule == min and $addition {
+    $breakpoint: $breakpoint + .0625;
+  }
+  @media (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Clearfix
+// ---------------------------------------------------------------------------
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 横幅をコンテンツ幅にして中央寄せ
+// ---------------------------------------------------------------------------
+@mixin cwLayout() {
+  max-width: $contentsW;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// ---------------------------------------------------------------------------
+// Hover時に要素を透明化
+// ---------------------------------------------------------------------------
+@mixin hoverOpacityEf($time: .5s, $opacity: .5) {
+  a {
+    transition: $time;
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}

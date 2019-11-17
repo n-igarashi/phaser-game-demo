@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $baseFont;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  word-wrap: break-word;
+  color: $baseColor;
+  background-color: $bgColor;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
