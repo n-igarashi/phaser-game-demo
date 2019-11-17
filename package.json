@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp tw",
-    "dev": "dev fuga fuga",
+    "start": "node server.js",
+    "dev": "gulp",
     "revision": "gulp revision",
     "build": "gulp build"
   },
