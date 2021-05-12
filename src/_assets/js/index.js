@@ -343,4 +343,8 @@ function hitBlocks(player, block)
 }
 
 
+const testFunction = (number) => {
+  const resuult = number * 2
 
+  return resuult
+}
